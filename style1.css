@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Special Elite', monospace;
+  background-color: #f8f5f0;
+}
+
+.hidden {
+  display: none;
+}
+
+.cover {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bg-texture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(1.1);
+}
+
+.cover-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.lip {
+  width: 100px;
+  opacity: 0.6;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  margin: 0.5rem 0 0;
+  color: #2b2b2b;
+  text-transform: lowercase;
+}
+
+.name {
+  font-size: 2.0rem;
+  color: #c03b52;
+  margin-bottom: -2rem;
+}
+
+.icons img {
+  width: 60px;
+  margin: 0 10px;
+  filter: drop-shadow(2px 2px 2px #999);
+}
+.graffiti-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fffcaa;
+  padding: 1rem 1.5rem;
+  border: 2px dashed #000;
+  font-family: 'Comic Sans MS', 'Special Elite', cursive;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  z-index: 999;
+  transform: rotate(-4deg);
+  border-radius: 6px;
+  animation: fadeIn 1s ease-in;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px) rotate(-4deg); }
+  to   { opacity: 1; transform: translateY(0) rotate(-4deg); }
+}
+
+.hidden {
+  display: none;
+}
+.tornado-storm {
+  position: fixed;
+  top: 30%;
+  left: -10%;
+  font-size: 4rem;
+  animation: moveStorm 20s linear infinite;
+  z-index: 1;
+  opacity: 0.15;
+  pointer-events: none;
+  transform: rotate(-10deg);
+}
+
+@keyframes moveStorm {
+  0% {
+    transform: translateX(0) rotate(-10deg);
+  }
+  50% {
+    transform: translateX(110vw) rotate(10deg);
+  }
+  100% {
+    transform: translateX(0) rotate(-10deg);
+  }
+}
+
+
+/* MAIN PAGE */
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border: 2px dashed #b82e2e;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+header .restricted-stamp {
+  color: red;
+  font-size: 2rem;
+  border: 2px solid red;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  transform: rotate(-8deg);
+  margin-bottom: 1rem;
+}
+
+.role {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+main p {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 2rem;
+  border-top: 1px dashed #aaa;
+  padding-top: 1rem;
+}
+
+footer ul.socials {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+footer ul.socials li a {
+  text-decoration: none;
+  color: #007bff;
+}
