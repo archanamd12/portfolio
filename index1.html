@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archana's Portfolio</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- COVER PAGE -->
+  <div id="cover-page" class="cover" onclick="showMain()">
+    <img src="texture.png" alt="Background" class="bg-texture" />
+    <div class="cover-content">
+      <h2 class="name">Archana Muraleedharan</h2>
+    
+    </div>
+  </div>
+
+  <div id="main-page" class="container hidden">
+    <header>
+    
+      <h2 class="name">Agent: Archana Muraleedharan</h2>
+      <br>
+      <p class="role">Computer Science Student | Tech Enthusiast | Aspiring Developer</p>
+    </header>
+
+    <main>
+  <p>Hello! I'm Archana, a passionate Computer Science Engineering student currently in my 3rd year.</p>
+  <p>I’m actively learning front-end web development with HTML, CSS, and JavaScript. Currently working on an internship project involving a SaaS-style landing page and sign-up system.</p>
+  <p>I enjoy real-world projects and exploring technologies like Node.js, Tailwind CSS, MongoDB, and Firebase.</p>
+  <p>Past roles include being on the core team of TinkerHub, and I’m a creative writer on Wattpad with 11k+ views!</p>
+  <p>Also proud to have ranked 9th in my college during IEEEXtreme.</p>
+
+  
+  <section class="education">
+    <h3>🎓 Education</h3>
+    <ul>
+      <li><strong>School:</strong> Viswajyothi Public School, Angamaly</li>
+      <li><strong>College:</strong> Adi Shankara Institute of Engineering and Technology,Kalady</li>
+    </ul>
+  </section>
+</main>
+
+
+    <footer>
+      <p>📩 Contact: <a href="mailto:archanamdharan@gmail.com">archanamdharan@gmail.com</a></p>
+      <ul class="socials">
+        <li><a href="https://github.com/archanamd12">Github</a></li>
+        <a href="https://www.linkedin.com/in/archana-muraleedharan-58904828b" target="_blank">LinkedIn</a>
+        <li><a href="https://www.youtube.com/@archanamuraleedharan12">YouTube</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script>
+    function showMain() {
+      document.getElementById("cover-page").classList.add("hidden");
+      document.getElementById("main-page").classList.remove("hidden");}
+  </script>
+</body>
+</html>
